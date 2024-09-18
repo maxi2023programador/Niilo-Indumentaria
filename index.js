@@ -64,7 +64,7 @@ function cargarProductos(array) {
     activarClickEnBotones(); // Llamar a activarClickEnBotones después de cargar los productos
 }
 
-fetch('../whatsapp.html')
+fetch('./whatsapp.html')
 .then(response => response.text())
 .then(data => {
   document.getElementById('whatsapp-placeholder').innerHTML = data;
