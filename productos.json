@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "imagen": "./assets/bermudas/algodon color gris.jpeg",
+        "nombre": "Bermuda Algodon Gris",
+        "precio": 220
+    },
+    {
+        "id": 2,
+        "imagen": "./assets/bermudas/bermuda algodon.jpeg",
+        "nombre": "Bermuda Algodon",
+        "precio": 200
+    },
+    {
+        "id": 3,
+        "imagen": "./assets/bermudas/bermuda blanca con roturas.jpg",
+        "nombre": "Bermuda Blanca con Roturas",
+        "precio": 280
+    },
+    {
+        "id": 4,
+        "imagen": "./assets/bermudas/bermuda camuflada.webp",
+        "nombre": "Bermuda Camuflada",
+        "precio": 350
+    },
+    {
+        "id": 5,
+        "imagen": "./assets/bermudas/bermuda gabardina tipo cargo.webp",
+        "nombre": "Bermuda de Gabardina",
+        "precio": 320
+    },
+    {
+        "id": 6,
+        "imagen": "./assets/bermudas/bermuda mom celeste.webp",
+        "nombre": "Bermuda Mom Celeste",
+        "precio": 140
+    },
+    {
+        "id": 7,
+        "imagen": "./assets/camisas/azula marino lisa.webp",
+        "nombre": "Camisas Azul Marino Lisa",
+        "precio": 270
+    },
+    {
+        "id": 8,
+        "imagen": "./assets/camisas/blanca eslastizada.jfif",
+        "nombre": "Camisas Blanca Elastizada",
+        "precio": 200
+    },
+    {
+        "id": 9,
+        "imagen": "./assets/camisas/camisa leñadora.jfif",
+        "nombre": "Camisa Leñadora",
+        "precio": 310
+    },
+    {
+        "id": 10,
+        "imagen": "./assets/camisas/celeste elastizada.jpg",
+        "nombre": "Camisas Celeste Elastizada",
+        "precio": 650
+    },
+    {
+        "id": 11,
+        "imagen": "./assets/camisas/gris manga corta.jfif",
+        "nombre": "Camisas Gris Manga Corta",
+        "precio": 290
+    },
+    {
+        "id": 12,
+        "imagen": "./assets/camisas/manga larga con lunares.jpg",
+        "nombre": "Camisas Manga Larga con Lunares",
+        "precio": 700
+    },
+    {
+        "id": 13,
+        "imagen": "./assets/jeans/jeans baggy cargo.webp",
+        "nombre": "Jeans Baggy Cargo",
+        "precio": 320
+    },
+    {
+        "id": 14,
+        "imagen": "./assets/jeans/jeans celeste clasico.jpg",
+        "nombre": "Jeans Celeste Clasico",
+        "precio": 1100
+    },
+    {
+        "id": 15,
+        "imagen": "./assets/jeans/jeans kurt blue.webp",
+        "nombre": "Jeans kurt Blue",
+        "precio": 600
+    },
+    {
+        "id": 16,
+        "imagen": "./assets/jeans/jeans mark negro.webp",
+        "nombre": "Jeans Mark Negro",
+        "precio": 260
+    },
+    {
+        "id": 17,
+        "imagen": "./assets/jeans/pantalon azul corte chino.webp",
+        "nombre": "Pantalon Azul Corte Chino",
+        "precio": 220
+    },
+    {
+        "id": 18,
+        "imagen": "./assets/jeans/pantalon jogger.webp",
+        "nombre": "Pantalon Jogger",
+        "precio": 200
+    },
+    {
+        "id": 19,
+        "imagen": "./assets/remeras/azul estampa urbana.jfif",
+        "nombre": "Remeras Azul Estampa Urbana",
+        "precio": 280
+    },
+    {
+        "id": 20,
+        "imagen": "./assets/remeras/blanca estamapada.jpg",
+        "nombre": "Remeras Blanca Estamapada",
+        "precio": 350
+    },
+    {
+        "id": 21,
+        "imagen": "./assets/remeras/lisa color bordo.webp",
+        "nombre": "Remeras Lisa Color Bordo",
+        "precio": 320
+    },
+    {
+        "id": 22,
+        "imagen": "./assets/remeras/negra trining basica.webp",
+        "nombre": "Remeras Negra Trining Basica",
+        "precio": 140
+    },
+    {
+        "id": 23,
+        "imagen": "./assets/remeras/puma convinada.jfif",
+        "nombre": "Remeras Puma Convinada",
+        "precio": 270
+    },
+    {
+        "id": 24,
+        "imagen": "./assets/remeras/remera-azul marino estampa.jpg",
+        "nombre": "Remera Azul Marino Estampa",
+        "precio": 200
+    },
+    {
+        "id": 25,
+        "imagen": "./assets/ropa interior/boxer uomo.webp",
+        "nombre": "Boxer Uomo",
+        "precio": 310
+    },
+    {
+        "id": 26,
+        "imagen": "./assets/ropa interior/calvin klein.webp",
+        "nombre": "Boxer Calvin Klein",
+        "precio": 650
+    },
+    {
+        "id": 27,
+        "imagen": "./assets/ropa interior/media caña media.jpg",
+        "nombre": "Media Caña media",
+        "precio": 290
+    },
+    {
+        "id": 28,
+        "imagen": "./assets/ropa interior/medias deportivas.webp",
+        "nombre": "Medias Deportivas",
+        "precio": 700
+    },
+    {
+        "id": 29,
+        "imagen": "./assets/ropa interior/medias invisibles.jpg",
+        "nombre": "Medias Invisibles",
+        "precio": 320
+    },
+    {
+        "id": 30,
+        "imagen": "./assets/ropa interior/slip algodon.jfif",
+        "nombre": "Slip Algodon",
+        "precio": 1100
+    },
+    {
+        "id": 31,
+        "imagen": "./assets/accesorios/bandolera negra.webp",
+        "nombre": "Bandolera Negra",
+        "precio": 600
+    },
+    {
+        "id": 32,
+        "imagen": "./assets/accesorios/cinto cuero marron.jfif",
+        "nombre": "Cinto Cuero Marron",
+        "precio": 260
+    },
+    {
+        "id": 33,
+        "imagen": "./assets/accesorios/cinto negro.jfif",
+        "nombre": "Cinto Negro",
+        "precio": 1100
+    },
+    {
+        "id": 34,
+        "imagen": "./assets/accesorios/gorra verde puma.webp",
+        "nombre": "Gorra Puma Color Verde",
+        "precio": 600
+    },
+    {
+        "id": 35,
+        "imagen": "./assets/accesorios/gorra negra.webp",
+        "nombre": "Gorra Negra",
+        "precio": 260
+    }
+]

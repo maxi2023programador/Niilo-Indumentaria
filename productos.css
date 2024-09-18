@@ -1,0 +1,23 @@
+.principal-container{
+    height: 100%;
+    margin: 0;
+    padding: o;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./img/nilo-1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer{
+    display: grid;
+    place-items: center;
+    padding: 50px;
+    background-color: rgb(151, 151, 139);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
