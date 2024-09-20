@@ -22,20 +22,19 @@ document.addEventListener('DOMContentLoaded', function() {
     obtenerProductos();
 });
 
-// Función para retornar el HTML de una tarjeta de producto
+// Función para retornar el HTML de una tarjeta de producto 
 function retornarCardHTML(producto) {
     return `
-    <div class="card">
-        <div class="card-image">
-            <img src="${producto.imagen}" alt="${producto.nombre}" width="100">
-        </div>
-        <div class="card-name"><p>${producto.nombre}</p></div>
-        <div class="card-price">$ ${producto.precio}</div>
-        <div class="card-button">
-            <button class="button button-outline button-add" id="${producto.id}" title="Clic para agregar al carrito">+</button>
+    <div class="d-flex justify-content-center mb-3">
+    <div class="card text-bg-dark" style="width: 100%; max-width: 600px;" data-bs-toggle="tooltip" title="Click para ir a la Card 2">
+        <div class="card-body text-center">
+            <img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid mb-2" style="width: 100%;">
+            <div class="card-name"><p>${producto.nombre}</p></div>
+            <div class="card-price"><p>$${producto.precio}</p></div>
+            
         </div>
     </div>
-    `;
+</div>`;
 }
 
 // Función para activar el click en los botones de agregar al carrito
