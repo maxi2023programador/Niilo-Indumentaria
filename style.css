@@ -1,80 +1,102 @@
-.principal-container {
+body {
+    margin: 0;
+    padding: 0; /* Elimina el padding que crea márgenes */
+    display: flex;
+    flex-direction: column;
     background-image: url('./img/nilo-1.jpeg');
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 20px;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    background-position: center;
+    background-attachment: fixed;
 }
+
 
 /* Modifique el container de productos para hacer scroll */
 .container {
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Distribuye tarjetas en columnas */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));  /* Ajusta el tamaño mínimo */
     gap: 30px;
     width: 100%;
-    max-width: 1200px;  /* Ajusta según el diseño */
-    max-height: 500px;  /* Altura máxima con scroll */
-    overflow-y: scroll;  /* Habilitar scroll vertical */
+    max-width: 1400px;
+    max-height: 500px;
     padding: 20px;
-    background: transparent;  /* Fondo blanco con transparencia */
+    background: transparent;
     border-radius: 8px;
-    
-    /* Oculte la barra de scroll en navegadores webkit (Chrome, Safari, Edge) */
-    scrollbar-width: none;  /* Ocultar scrollbar en Firefox */
-    -ms-overflow-style: none;  /* Ocultar scrollbar en Internet Explorer/Edge */
-
+    scrollbar-width: thin;
+    justify-content: center;
 }
 
-.container-card{
-    margin-top: 80px; /* Ajusta el margen superior para que las cards no se escondan detrás del navbar */
+/* Estilo del navbar */
+.navbar {
+    height: auto; /* Ajusta esta altura según lo que necesites */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
+    width: 100vw; /* Asegura que el navbar ocupe el 100% del viewport */
+    padding: 0; /* Elimina cualquier padding lateral adicional */
+    margin: 0; /* Elimina márgenes */
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0; /* Posiciona el navbar en la parte superior */
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+/* Estilo del footer */
+.footer {
+    height: 60px; /* Ajusta la altura del footer según tus necesidades */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido del footer */
+    justify-content: center; /* Centra horizontalmente el contenido del footer */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para mejor legibilidad */
+    width: 100vw; /* Asegura que el footer ocupe todo el ancho */
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Posiciona el footer en la parte inferior */
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */    
+    padding: 0; /* Elimina cualquier padding lateral adicional */
+    margin: 0; /* Elimina márgenes */    
+    align-items: center;
+}
+
+.container-card {
+    margin-top: 80px;
     text-align: center;
     flex: 1;
-    padding: 40px; /* Añade padding para dar espacio en los laterales */
-    display: flex;    
+    padding: 40px;
+    display: flex;
 }
 
 /* Estilo de las cards */
 .card {
-    width: 100%; /* Fija el ancho de las cards */
-    margin: 15px; /* Espacio entre las cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efecto de elevación */
-    border-radius: 8px; /* Bordes redondeados */
-    background-color: white; /* Fondo blanco de las cards */
-    flex: 1 1 auto; /* Permite que las cards se redimensionen de forma responsive */
+    width: 100%; /* Ocupa todo el ancho de la columna */
+    max-width: 600px; /* Ancho máximo de cada card */
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
     display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.5s ease-in;
+
 }
-
-/* Estilo de las imágenes de las cards */
-.card-img-top {
-    height: 50px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
-    width: 80%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
-    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior de la imagen */
-}
-
-
-.container::-webkit-scrollbar {
-    display: none;  /* Ocultar scrollbar en navegadores basados en WebKit */
-}
-
 
 .card:hover {
-    transition: .5s ease-in;
+    transform: scale(1.05);
     box-shadow: 5px 20px 60px rgba(211, 211, 211, 0.519);
 }
 
-
-.card .card-image img {
-    width: 100%;               /* Asegura que la imagen ocupe el ancho del contenedor */
-    height: 150px;              /* Ajusta la altura según lo necesario */
-    object-fit: cover;          /* Mantiene el aspecto de la imagen, recorta si es necesario */
-    border-radius: 8px 8px 0 0; /* Aplica bordes redondeados solo a la parte superior de la imagen */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .card .card-name {
@@ -82,7 +104,6 @@
     font-size: 10px;
     font-weight: 700;
     display: block;
-    width: 1fr;
 }
 
 .card .card-price {
@@ -90,7 +111,6 @@
     font-size: 20px;
     font-weight: 500;
     display: block;
-    width: 1fr;
 }
 
 .card .card-button {
@@ -119,7 +139,7 @@
 }
 
 .sin-stock {
-    filter: grayscale(100%) opacity(40%); 
+    filter: grayscale(100%) opacity(40%);
 }
 
 .card-error {
@@ -140,31 +160,28 @@
 }
 
 .whatsapp-button {
-    position: fixed; /* Fija la posición en la pantalla */
-    bottom: 20px; /* Separa el botón 20px del borde inferior */
-    right: 25px; /* Separa el botón 20px del borde derecho */
-    background-color: #25D366; /* Color de fondo verde de WhatsApp */
-    color: white; /* Color del ícono */
-    border: none; /* Elimina el borde predeterminado del botón */
-    border-radius: 50%; /* Hace que el botón sea circular */
-    width: 60px; /* Ancho del botón */
-    height: 60px; /* Alto del botón */
-    display: flex; /* Utiliza flexbox para centrar el icono */
-    align-items: center; /* Centra verticalmente el icono dentro del botón */
-    justify-content: center; /* Centra horizontalmente el icono dentro del botón */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra */
-    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Añade una transición suave para el cambio de color */
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .whatsapp-button:hover {
-    background-color: #1e9e52; /* Cambia el color de fondo cuando el usuario pasa el mouse por encima */
+    transform: scale(1.1);
+    background-color: #1e9e52;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
-.whatsapp-button i {
-    font-size: 35px; /* Ajusta el tamaño del ícono */
-}
- 
 
 .footer {
     display: grid;
